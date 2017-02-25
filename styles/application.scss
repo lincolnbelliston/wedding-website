@@ -1,0 +1,20 @@
+$background: 'https://images.unsplash.com/photo-1474508297924-60ae8de135eb?dpr=1&auto=compress,format&fit=crop&w=376&h=282&q=80&cs=tinysrgb&crop=';
+.navbar {
+  font-family: 'EB Garamond', serif;
+  font-size: 24px;
+  opacity: 0.75
+}
+
+.content {
+  background-color: white;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: #EEEEEE;
+  margin-bottom: 20px;
+  height: calc(100vh);
+}
+
+body {
+  background-image: url($background);
+  background-size: 100%;
+}
