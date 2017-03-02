@@ -1,4 +1,9 @@
-$background: 'https://images.unsplash.com/photo-1474508297924-60ae8de135eb?dpr=1&auto=compress,format&fit=crop&w=376&h=282&q=80&cs=tinysrgb&crop=';
+//$background: 'https://images.unsplash.com/photo-1474508297924-60ae8de135eb?dpr=1&auto=compress,format&fit=crop&w=376&h=282&q=80&cs=tinysrgb&crop=';
+$background: '../assets/crossword.png';
+$borderColor: #EEEEEE;
+
+:export { borderColor: $borderColor; }
+
 .navbar {
   font-family: 'EB Garamond', serif;
   font-size: 24px;
@@ -9,9 +14,8 @@ $background: 'https://images.unsplash.com/photo-1474508297924-60ae8de135eb?dpr=1
   background-color: white;
   border-style: solid;
   border-radius: 2px;
-  border-color: #EEEEEE;
+  border-color: $borderColor;
   margin-bottom: 20px;
-  height: calc(100vh);
 }
 
 body {
