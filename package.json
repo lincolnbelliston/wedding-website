@@ -26,7 +26,8 @@
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
-    "deploy": "surge ./dist andrealincoln.com"
+    "deploy": "surge ./dist andrealincoln.com",
+    "share":"lt --port 3000 --subdomain okaytrythis"
   },
   "author": "Lincoln Belliston",
   "license": "MIT",

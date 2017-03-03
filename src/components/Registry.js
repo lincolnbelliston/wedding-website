@@ -34,13 +34,13 @@ const Registry = () => {
         <img src={require("../../assets/polaroid2.png")} style={localStyles.img}/>
       </div>
       <div style={localStyles.msgContainer}>
-        <br />
+        <h1>registry</h1>
         <p>We'll be flying back to Boston after the wedding, so it will be difficult for us to
         take gifts home. If you'd like to get us a gift, we are registered at Zola.com. Zola allows
         you to purchase a gift that will be shipped to us once we're settled into our new place.</p>
-      <p>View our registry <a href="https://www.youtube.com/watch?v=hFDcoX7s6rE" target="_blank">here</a>.</p>
+      <p>View our registry <a href="https://www.zola.com/registry/andrea-lincoln" target="_blank">here</a>.</p>
       </div>
-
+      <br />
     </div>
 
   );

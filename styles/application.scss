@@ -1,17 +1,23 @@
 //$background: 'https://images.unsplash.com/photo-1474508297924-60ae8de135eb?dpr=1&auto=compress,format&fit=crop&w=376&h=282&q=80&cs=tinysrgb&crop=';
-$background: '../assets/crossword.png';
-$borderColor: #EEEEEE;
+$background: 'http://www.wallpapersforgalaxys4.com/assets/uploads/gallery_image/Textures/Wallpapers-For-Galaxy-S4-Textures-16.jpg';
+$borderColor: #17330A;
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
 :export { borderColor: $borderColor; }
 
 .navbar {
   font-family: 'EB Garamond', serif;
   font-size: 24px;
-  opacity: 0.75
+}
+
+.navbar-collapse, .navbar-header, .navbar a {
+  color: $borderColor !important;
+  background-color: #FEFFF1 !important;
 }
 
 .content {
-  background-color: white;
+  background-image: url('../assets/45-degree-fabric-light.png');
+  background-color: #FEFFF1;
   border-style: solid;
   border-radius: 2px;
   border-color: $borderColor;
@@ -21,4 +27,11 @@ $borderColor: #EEEEEE;
 body {
   background-image: url($background);
   background-size: 100%;
+  font-family: 'Crimson Text', serif;
+  color: $borderColor;
+
+}
+
+p {
+  font-size: 1.5em;
 }

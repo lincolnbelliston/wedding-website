@@ -35,14 +35,15 @@ const Home = () => {
 
     <div style={localStyles.container}>
       <div style={localStyles.header}>
-        <h1>Andrea + Lincoln</h1>
+        <h1>andrea + lincoln</h1>
       </div>
       <div style={localStyles.imgContainer}>
-        <img src={require("../../assets/Andrea-Lincoln-1.jpg")} style={localStyles.img}/>
+        <img src={require("../../assets/Andrea-Lincoln-1-min.jpg")} style={localStyles.img}/>
       </div>
       <div style={localStyles.msgContainer}>
-        <h2>Welcome!</h2>
-        <p>Here is some text</p>
+        <h1>welcome!</h1>
+        <p>we're excited to celebrate our wedding with you</p>
+        <br />
       </div>
 
     </div>
