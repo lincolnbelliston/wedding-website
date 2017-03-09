@@ -3,30 +3,33 @@ import styles from '../../styles/application.scss';
 
 const localStyles = {
   img: {
-    "maxWidth": "90%",
+    "maxWidth": "100%",
     "display":"block",
     "margin":"auto",
-    "marginTop":"5%",
     "padding":"1%",
     "border":"1px solid",
     "borderColor":styles.borderColor
   },
   header: {
-    "marginTop":"5%"
+    "marginTop":"calc(3% - 20px)",
+    "marginBottom":"3%"
   },
   imgContainer: {
-    "maxWidth": "90%"
+    "marginTop":"3%",
+    "marginBottom":"3%"
   },
 
   msgContainer: {
-    "width": "80%",
+    "width": "100%",
     "display":"block",
-    "margin":"auto"
+    "margin":"auto",
+    "marginTop":"3%",
+    "marginBottom":"3%"
   },
   container: {
     "display":"flex",
     "alignItems": "center",
-    "flexDirection":"column"
+    "flexDirection":"column",
   }
 };
 

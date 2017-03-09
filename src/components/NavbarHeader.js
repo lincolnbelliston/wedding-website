@@ -13,14 +13,12 @@ class NavbarHeader extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav activeKey={this.props.activeKey}
-              onSelect={this.props.handleSelect} >
-              <NavItem eventKey={0} >Home</NavItem>
-              <NavItem eventKey={1} >Travel Info</NavItem>
-              <NavItem eventKey={2} >Registry</NavItem>
-              <NavItem eventKey={3} >FAQ</NavItem>
-            </Nav>
-            <Nav>
-              <NavItem onClick={this.props.open}>RSVP</NavItem>
+              onSelect={this.props.handleSelect}>
+              <NavItem eventKey={0} >home</NavItem>
+              <NavItem eventKey={1} >travel info</NavItem>
+              <NavItem eventKey={2} >registry</NavItem>
+              <NavItem eventKey={3} >faq</NavItem>
+              <NavItem eventKey={4} onClick={this.props.open}>rsvp</NavItem>
             </Nav>
           </Navbar.Collapse>
 

@@ -38,6 +38,9 @@ const App = React.createClass({
       case 3:
         activeContent = <Faq />;
         break;
+      case 4:
+        activeContent = this.state.activeContent;
+        break;
     }
     return activeContent;
   },

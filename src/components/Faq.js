@@ -2,40 +2,48 @@ import React from 'react';
 import styles from '../../styles/application.scss';
 
 const localStyles = {
-  img: {
-    "maxWidth": "90%",
-    "display":"block",
-    "margin":"auto",
-    "marginTop":"5%",
-    "padding":"1%",
-    "border":"1px solid",
-    "borderColor": styles.borderColor
-  },
-  imgContainer: {
-    "maxWidth": "90%"
-  },
-
-  msgContainer: {
-    "width": "80%",
-    "display":"block",
-    "margin":"auto"
-  },
   container: {
     "display":"flex",
     "alignItems": "center",
     "flexDirection":"column"
-  }
+  },
+  header: {
+    "marginTop":"calc(3% - 20px)",
+    "marginBottom":"3%"
+  },
+  imgContainer: {
+    "marginTop": "3%",
+    "marginBottom": "3%"
+  },
+  img: {
+    "maxWidth": "100%",
+    "display":"block",
+    "margin":"auto",
+    "padding":"1%",
+    "border":"1px solid",
+    "borderColor": styles.borderColor
+  },
+  msgContainer: {
+    "width": "100%",
+    "display":"block",
+    "margin":"auto",
+    "marginTop": "3%",
+    "marginBottom": "3%"
+  },
 };
+
 
 const Faq = () => {
   return(
 
     <div style={localStyles.container}>
+      <div style={localStyles.header}>
+        <h1>frequently asked questions</h1>
+      </div>
       <div style={localStyles.imgContainer}>
         <img src={require("../../assets/horseshoe2.jpg")} style={localStyles.img}/>
       </div>
       <div style={localStyles.msgContainer}>
-        <h1>frequently asked questions</h1>
         <p><strong>how did you meet?</strong></p>
         <p>We met in March 2015 when Lincoln (going to school in Arizona) was visiting a friend in NYC.
         That friend introduced him to Andrea (living in Brooklyn) and we became friends right away. </p>

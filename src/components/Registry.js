@@ -1,23 +1,27 @@
 import React from 'react';
-import styles from '../../styles/application.scss';
 
 const localStyles = {
   img: {
-    "maxWidth": "90%",
+    "maxWidth": "100%",
     "display":"block",
     "margin":"auto",
-    "marginTop":"5%",
-    "padding":"1%",
-    "borderColor":styles.borderColor
+    "padding":"1%"
+  },
+  header: {
+    "marginTop":"calc(3% - 20px)",
+    "marginBottom":"3%"
   },
   imgContainer: {
-    "maxWidth": "90%"
+    "marginTop": "3%",
+    "marginBottom":"3%"
   },
 
   msgContainer: {
-    "width": "80%",
+    "width": "100%",
     "display":"block",
-    "margin":"auto"
+    "margin":"auto",
+    "marginBottom": "3%",
+    "marginTop": "3%"
   },
   container: {
     "display":"flex",
@@ -30,11 +34,13 @@ const Registry = () => {
   return(
 
     <div style={localStyles.container}>
+      <div style={localStyles.header}>
+        <h1>registry</h1>
+      </div>
       <div style={localStyles.imgContainer}>
         <img src={require("../../assets/polaroid2.png")} style={localStyles.img}/>
       </div>
       <div style={localStyles.msgContainer}>
-        <h1>registry</h1>
         <p>We'll be flying back to Boston after the wedding, so it will be difficult for us to
         take gifts home. If you'd like to get us a gift, we are registered at Zola.com. Zola allows
         you to purchase a gift that will be shipped to us once we're settled into our new place.</p>
