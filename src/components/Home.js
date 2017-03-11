@@ -24,7 +24,8 @@ const localStyles = {
     "display":"block",
     "margin":"auto",
     "marginTop":"3%",
-    "marginBottom":"3%"
+    "marginBottom":"3%",
+    "textAlign":"center"
   },
   container: {
     "display":"flex",
