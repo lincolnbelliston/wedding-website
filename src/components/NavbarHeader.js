@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
+
 class NavbarHeader extends Component {
   render() {
     return (
@@ -12,13 +13,12 @@ class NavbarHeader extends Component {
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav activeKey={this.props.activeKey}
-              onSelect={this.props.handleSelect}>
-              <NavItem eventKey={0} >home</NavItem>
-              <NavItem eventKey={1} >travel info</NavItem>
-              <NavItem eventKey={2} >registry</NavItem>
-              <NavItem eventKey={3} >faq</NavItem>
-              <NavItem eventKey={4} onClick={this.props.open}>rsvp</NavItem>
+            <Nav>
+              <NavItem>home</NavItem>
+              <NavItem>travel info</NavItem>
+              <NavItem>registry</NavItem>
+              <NavItem>faq</NavItem>
+              <NavItem onClick={this.props.open}>rsvp</NavItem>
             </Nav>
           </Navbar.Collapse>
 

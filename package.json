@@ -27,7 +27,7 @@
     "open:cover": "npm run test:cover && open coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
     "deploy": "surge ./dist andrealincoln.com",
-    "share":"lt --port 3000 --subdomain okaytrythis"
+    "share": "lt --port 3000 --subdomain okaytrythis"
   },
   "author": "Lincoln Belliston",
   "license": "MIT",
@@ -35,7 +35,7 @@
     "object-assign": "4.1.0",
     "react": "15.4.1",
     "react-dom": "15.4.1",
-    "react-router-redux": "4.0.7"
+    "react-router-dom": "4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "6.5.4",
