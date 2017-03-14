@@ -7,21 +7,22 @@ import TravelInfo from './TravelInfo';
 import Registry from './Registry';
 import Faq from './Faq';
 
-const App = React.createClass({
-  getInitialState() {
-    return {
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       activeKey: 0,
       activeContent: this.getActiveContent(0),
       showRSVPModal: false
     };
-  },
+  }
 
   handleSelect(eventKey) {
       this.setState({
           activeKey: eventKey,
           activeContent: this.getActiveContent(eventKey)
       });
-  },
+  }
 
   getActiveContent(activeKey) {
     let activeContent;
@@ -43,28 +44,28 @@ const App = React.createClass({
         break;
     }
     return activeContent;
-  },
+  }
 
   close() {
     this.setState({ showRSVPModal: false});
-  },
+  }
 
   open() {
     this.setState({ showRSVPModal: true});
-  },
+  }
 
   render() {
     return (
       <div>
-        <NavbarHeader open={this.open}
-        handleSelect={this.handleSelect}
+        <NavbarHeader open={this.open.bind(this)}
+        handleSelect={this.handleSelect.bind(this)}
         activeKey={this.state.activeKey}/>
         <Content activeContent={this.state.activeContent}/>
         <RSVPForm showRSVPModal={this.state.showRSVPModal}
-          close={this.close}/>
+          close={this.close.bind(this)}/>
       </div>
     );
   }
-});
+}
 
 export default App;
