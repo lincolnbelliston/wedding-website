@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+
 
 
 class NavbarHeader extends Component {
@@ -14,11 +16,11 @@ class NavbarHeader extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem>home</NavItem>
-              <NavItem>travel info</NavItem>
-              <NavItem>registry</NavItem>
-              <NavItem>faq</NavItem>
-              <NavItem onClick={this.props.open}>rsvp</NavItem>
+              <NavItem eventKey={0}><Link to="/">home</Link></NavItem>
+              <NavItem eventKey={1}><Link to="/travel-info">travel info</Link></NavItem>
+              <NavItem eventKey={2}><Link to="/registry">registry</Link></NavItem>
+              <NavItem eventKey={3}><Link to="/frequently-asked-questions">faq</Link></NavItem>
+              <NavItem eventKey={4} onClick={this.props.open}>rsvp</NavItem>
             </Nav>
           </Navbar.Collapse>
 
