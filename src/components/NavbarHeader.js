@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+
+
 
 class NavbarHeader extends Component {
   render() {
@@ -12,12 +15,11 @@ class NavbarHeader extends Component {
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav activeKey={this.props.activeKey}
-              onSelect={this.props.handleSelect}>
-              <NavItem eventKey={0} >home</NavItem>
-              <NavItem eventKey={1} >travel info</NavItem>
-              <NavItem eventKey={2} >registry</NavItem>
-              <NavItem eventKey={3} >faq</NavItem>
+            <Nav>
+              <NavItem eventKey={0}><Link to="/">home</Link></NavItem>
+              <NavItem eventKey={1}><Link to="/travel-info">travel info</Link></NavItem>
+              <NavItem eventKey={2}><Link to="/registry">registry</Link></NavItem>
+              <NavItem eventKey={3}><Link to="/frequently-asked-questions">faq</Link></NavItem>
               <NavItem eventKey={4} onClick={this.props.open}>rsvp</NavItem>
             </Nav>
           </Navbar.Collapse>
