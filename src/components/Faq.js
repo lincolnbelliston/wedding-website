@@ -61,6 +61,7 @@ const Faq = () => {
         <p>We're moving to Boston! Lincoln's short stint in NYC has come to an end, as he has just accepted a job and will be moving right before the wedding. Andrea is leaving her position on the Anthropologie visual team and hopes to become a professional knitter.</p>
       </div>
       <br />
+      
     </div>
 
   );

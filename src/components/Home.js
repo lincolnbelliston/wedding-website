@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../styles/application.scss';
+import {Link} from 'react-router-dom';
 
 const localStyles = {
   img: {
@@ -49,7 +50,9 @@ const Home = () => {
         <p>we're excited to celebrate our wedding with you</p>
         <br />
       </div>
-
+      <div style={{display:'none'}}>
+        <Link to="/" id="updateHeader">h</Link>
+      </div>
     </div>
 
   );

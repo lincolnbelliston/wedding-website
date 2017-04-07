@@ -50,14 +50,18 @@ const Registry = () => {
         <br />
         <p>As you make plans, you may want to keep these events in mind:</p>
         <p><strong>Friday 6:00pm</strong> Family Barbeque at <a href="https://goo.gl/maps/ivQQWU3qHyp" target="_blank">Freestone Park</a></p>
-        <p><strong>Saturday 8:00am</strong> Kid's Easter Egg Hunt at <a href="https://goo.gl/maps/v7PF9kbCKjE2" target="_blank">Harmony Park</a></p>
         <p><strong>Saturday 2:30pm</strong> Pictures at <a href="https://goo.gl/maps/UpyrBCsvkin" target="_blank">Mesa Temple</a></p>
         <p><strong>Saturday 6:00pm</strong> Reception at <a href="https://goo.gl/maps/VmrUEjm7bZw" target="_blank">Schoenburg Gardens</a></p>
-        <p>Parking will be available...</p>
+        <p>Parking will be available on the street:</p>
+        <div style={localStyles.imgContainer}>
+          <img src={require("../../assets/parking_map.png")} style={localStyles.img}/>
+        </div>
         <br /><br />
         <p><strong>While you're in the area, we recommend checking out:</strong></p>
         <p>The <a href="http://easterpageant.org/" target="_blank">Mesa Temple Easter Pageant</a> will be happening Tuesday-Friday evening.<br /></p>
-        <p>Southern food in a 1940's Valentine Diner at <a href="http://welcomediner.net/garfield" target="_blank"> Welcome Diner.</a></p>
+        <p>Southern food in a 1940's Valentine Diner at <a href="http://welcomediner.net/garfield" target="_blank"> Welcome Diner</a>.</p>
+        <p><strong>Saturday 8:00am</strong> Kid's Easter Egg Hunt at <a href="https://goo.gl/maps/v7PF9kbCKjE2" target="_blank">Harmony Park</a>.</p>
+
       </div>
     </div>
 

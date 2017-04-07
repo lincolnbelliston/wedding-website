@@ -47,6 +47,7 @@ const Registry = () => {
       <p>View our registry <a href="https://www.zola.com/registry/andrea-lincoln" target="_blank">here</a>.</p>
       </div>
       <br />
+        
     </div>
 
   );
